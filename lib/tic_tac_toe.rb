@@ -83,7 +83,7 @@ end
 def won?
   i = 0
   WIN_COMBINATIONS.each {|sub_array|
-   if @board[sub_array[0]] == @board[sub_array[1]] && @board[sub_array[1]] == @board[sub_array[2]]
+   if @board[sub_array[0]] == @board[sub_array[1]] && @board[sub_array[1]] == @board[sub_array[2]] && @board[sub_array[0]] != " " && @board[sub_array[0]] != nil
    return sub_array
    i += 1
  end
