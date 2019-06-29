@@ -131,12 +131,14 @@ end
 def play
 while draw? == false && over? == false do
   turn
-end
 if won? != false
   puts "Congratulations #{winner}!"
+  break
 end
 if draw? == true
   puts "Cat's Game!"
+  break
+end
 end
 end
 
