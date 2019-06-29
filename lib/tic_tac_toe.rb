@@ -132,7 +132,7 @@ def play
 while draw? == false && over? == false do
   turn
 end
-if won? != false
+if won? != false && won? != nil
   puts "Congratulations #{winner}!"
 end
 if draw? == true
