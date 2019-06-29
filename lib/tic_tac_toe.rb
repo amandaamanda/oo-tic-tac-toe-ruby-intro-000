@@ -129,17 +129,15 @@ def winner
 end
 
 def play
-  i = 0
-  while i < 10
-    turn
-    i += 1
-  end
-  if won? != false
-    puts "Congratulations #{winner}!"
-  end
-  if draw? == true
-    puts "Cat's Game!"
-  end
+while draw? == false && over? == false do
+  turn
+end
+if won? != false
+  puts "Congratulations #{winner}!"
+end
+if draw? == true
+  puts "Cat's Game!"
+end
 end
 
 end
